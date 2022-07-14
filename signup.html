@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Personal Website</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+    /* start header */
+    a {
+      color: #3a6cf4;
+      text-decoration: none;
+      padding: 15px;
+      display: inline-block;
+    }
+
+    header {
+      background-color: #f0f0f0;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1px 200px;
+    }
+
+    a:hover {
+      background-color: rgb(245, 245, 245);
+    }
+
+    /* start form */
+    .real-form {
+      background-color: white;
+      width: 55%;
+      box-shadow: 5px 5px 25px rgb(190, 188, 188);
+      position: absolute;
+      top: 230px;
+      padding-left: 19px;
+      padding-top: 20px;
+      left: 350px;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid rgb(201, 200, 200);
+      height: 30px;
+      width: 100%;
+    }
+    .checkbox {
+      width: 20px;
+    }
+
+    .check-label {
+      position: relative;
+      bottom: 10px;
+      left: 19px;
+    }
+
+    button {
+      background-color: #3a6cf4;
+      color: white;
+      padding: 10px 20px;
+      border: 1px solid #3a6cf4;
+
+      float: right;
+      margin-bottom: 17px;
+      margin-right: 10px;
+    }
+    .title-form {
+      position: absolute;
+      top: 100px;
+      left: 650px;
+      display: flex;
+      justify-content: center;
+      color: #3a6cf4;
+      font-size: 35px;
+      font-weight: 800;
+    }
+    /* start footer */
+    footer {
+      background-color: #000016;
+
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+    }
+    .footer-title {
+      color: white;
+
+      font-size: 21px;
+      font-weight: 500;
+      display: block;
+    }
+    span {
+      color: #3a6cf4;
+    }
+    .footer-link {
+      color: #3a6cf4;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .footerf {
+      background-color: #000016;
+      position: absolute;
+      top: 850px;
+      width: 100%;
+
+      padding: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+
+  <body>
+    <!-- start header -->
+    <header>
+      <a class="Home" href="index.html"> Moamen ELghabour</a>
+      <nav class="alink">
+        <a href="index.html">Service</a>
+        <a href="index.html">Project</a>
+        <a href="index.html">Contact US</a>
+      </nav>
+    </header>
+    <!-- start form -->
+    <div class="title-form">
+      <h3>Sign-Up</h3>
+    </div>
+    <form class="real-form">
+      <label for="first name"> First Name </label>
+      <br />
+      <input id="Firstname" type="text" placeholder="Enter Your First Name" />
+      <br />
+      <br />
+      <br />
+      <label for="Lastname">Last name</label>
+      <br />
+      <input id="lastname" type="text" placeholder="Enter Your Last Name" />
+      <br />
+      <br />
+      <br />
+      <label for="Email">Email </label>
+      <br />
+      <input id="Email" type="email" placeholder="Enter Your Email" />
+      <br />
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <br />
+      <input type="password" placeholder="Enter Your Password" />
+      <br />
+      <br />
+      <br />
+      <label for="address">Address</label>
+      <br />
+      <input type="text" placeholder="Enter Your Address" />
+      <br />
+      <br />
+      <br />
+      <label for="phone">phone number</label>
+      <br />
+      <input type="number" placeholder="Enter Your Phone Number" />
+      <br />
+      <br />
+      <br />
+
+      <input class="checkbox" type="checkbox" />
+      <label class="check-label" for="checkbox"> I Like it! </label>
+      <button>send</button>
+    </form>
+
+    <!-- start footer -->
+    <footer>
+      <div class="footerf">
+        <p class="footer-title">Copyrights @ <span>Moamen ELghabour</span></p>
+        <div class="footer-link">
+          <a href="https://www.linkedin.com/in/moamen-elghabour-0a6388234"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/elghabour-hub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://twitter.com/Elghabour_"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
